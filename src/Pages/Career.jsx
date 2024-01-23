@@ -1,11 +1,11 @@
 import CareerForm from "../components/Career/CareerForm";
-import { Fade } from "react-reveal"
+import { Fade } from "react-awesome-reveal"
 import CurrentOpenings from "../components/Career/CurrentOpenings";
 
 const Career = () => {
   return (
     <div>
-    <Fade bottom>
+    <Fade direction="bottom">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-3 mx-11 mt-14">
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-roboto font-bold tracking-wide leading-10">
@@ -51,7 +51,7 @@ const Career = () => {
         </div>
       </div>
       </Fade>
-      <Fade bottom>
+      <Fade direction="bottom">
       <CurrentOpenings/>
       </Fade>
     </div>

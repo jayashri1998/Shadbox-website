@@ -1,7 +1,7 @@
 import HireForm from "../components/HireForm/HireForm"
 import HiringProcess from "../components/HireForm/HireProcess"
 import CallSupport from "../components/HireForm/CallSupport"
-import { Fade } from "react-reveal"
+import { Fade } from "react-awesome-reveal"
 import HireBanner from "../components/HireForm/HireBanner"
 import HireUs from ".././assets/Image/Hireus.jpg"
 import WhyChoose from ".././assets/Image/whyChoose.jpg"
@@ -13,7 +13,7 @@ import CallSupportImg from ".././assets/Image/callSupport.jpg"
 const HireDeveloper = () => {
   return (
     <div > 
-    <Fade bottom>
+    <Fade direction="bottom">
     <div >
     <div className="relative group ">
     <div className={`content-overlay bg-opacity-50 bg-black absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
@@ -58,18 +58,18 @@ const HireDeveloper = () => {
     <LogoSlider/>
     </div>
     <div className="mt-2 lg:flex items-center justify-around">
-    <Fade left>
+    <Fade direction="left">
     <HiringProcess/>
     </Fade>
     <div>
-    <Fade right>
+    <Fade direction="right">
     <img src={CallSupportImg} alt="" className="w-96 h-96 mx-auto rounded-lg"/>
     <CallSupport/>
     </Fade>
     </div>
     </div>
    
-    <Fade bottom>
+    <Fade direction="bottom">
     <HireBanner/>
     </Fade>
    

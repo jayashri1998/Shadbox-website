@@ -4,7 +4,7 @@ import { MdCastForEducation } from "react-icons/md";
 import { SiLevelsdotfyi } from "react-icons/si";
 import { FaPerson } from "react-icons/fa6";
 import { GiTakeMyMoney,GiSkills } from "react-icons/gi";
-import {Fade} from "react-reveal";
+import {Fade} from "react-awesome-reveal";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
@@ -45,13 +45,13 @@ const CareerDetails = () => {
 
     return (
       <div>
-      <Fade bottom>
+      <Fade direction="bottom">
       <h1 className="lg:mx-32 text-2xl font-roboto text-center py-16 mt-8 font-bold ">{data.title}</h1>
       <hr className=" border-gray-500 border-t-4xl w-80 mx-auto" />
       </Fade>
     
       <div className=" mt-16 lg:flex lg:ml-32 "> 
-      <Fade left>
+      <Fade direction="left">
         <div className="max-w-xl mx-7 mt-6 ">
          <h4 className="font-semibold text-xl font-roboto text-justify "> About this job:</h4>
          <p className="font-normal font-roboto">{data.description}</p>
@@ -72,7 +72,7 @@ const CareerDetails = () => {
          </div> <h4 className="font-semibold  font-roboto flex"><GiTakeMyMoney className="w-4 h-4" />Salary:<span className= " font-normal px-2 ">{data.salary}</span></h4> 
           </div>
           </Fade>
-          <Fade right>
+          <Fade direction="right">
         <CareerForm/>
         </Fade>
       </div>

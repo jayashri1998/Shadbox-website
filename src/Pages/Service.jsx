@@ -2,7 +2,7 @@ import GetInTouch from "../components/OtherFile/GetInTouch";
 import LogoSlider from "../components/Home/LogoSlider";
 import ServiceCard from "../components/Service/ServiceCard";
 import TechStack from "../components/OtherFile/TechStack";
-import Fade from 'react-reveal';
+import Fade from 'react-awesome-reveal';
 import WhyShadbox from "../components/OtherFile/WhyShadbox";
 import { useEffect,useState } from "react";
 import axios from "axios";
@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-3 mx-11 mt-16">
-       <Fade left>
+       <Fade direction="left">
       <div>
           <h1 className="text-4xl font-roboto font-bold tracking-wide">
             Welcome to{" "}
@@ -49,7 +49,7 @@ const Services = () => {
           </p>
         </div>
         </Fade>
-        <Fade right>
+        <Fade direction="right">
         <div className="m-6">
           <img
             className=" max-w-sm md:max-w-lg rounded-lg hover:shadow-lg hover:scale-105 transition"
@@ -59,7 +59,7 @@ const Services = () => {
         </Fade>
       </div>
       <LogoSlider/>
-      <Fade bottom>
+      <Fade direction="bottom">
       <div className="flex flex-col md:flex-row gap-4 mt-20 mx-4">
         {data && data.map((service, index) => (
           <ServiceCard
@@ -71,13 +71,13 @@ const Services = () => {
         ))}
       </div>
       </Fade>
-      <Fade bottom>
+      <Fade direction="bottom">
       <TechStack/>
       </Fade>
-      <Fade bottom>
+      <Fade direction="bottom">
       <GetInTouch/>
       </Fade>
-      <Fade bottom>
+      <Fade direction="bottom">
       <WhyShadbox/>
       </Fade>
     </div>

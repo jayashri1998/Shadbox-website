@@ -2,7 +2,7 @@
 import GetInTouch from '../OtherFile/GetInTouch';
 import ServiceCard from '../Service/ServiceCard';
 import TechStack from '../OtherFile/TechStack';
-import Fade from 'react-reveal';
+import Fade from 'react-awesome-reveal';
 import ContactUs from "../../assets/Image/ContactUs.jpg"
 import Connectuus from '../Home/Connectuus';
 
@@ -24,7 +24,7 @@ const ContactBlog = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-3 mx-11 mt-14">
-      <Fade left>
+      <Fade direction="left">
       <div className="mx-3">
         <img
           className=" max-w-sm md:max-w-lg rounded-lg hover:shadow-lg hover:scale-105 transition my-8"
@@ -32,7 +32,7 @@ const ContactBlog = () => {
         />
       </div>
       </Fade>
-       <Fade right>
+       <Fade direction="right">
       <div>
           <h1 className="text-4xl underline font-roboto font-bold tracking-wide">
       Contact Us 

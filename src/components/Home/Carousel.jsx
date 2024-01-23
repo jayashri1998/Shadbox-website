@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CarouselImg from "../../assets/Image/CarouselImg.jpg"
 import CarouselImg2 from "../../assets/Image/WebDevelopment.png"
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-awesome-reveal';
 import Integration from "../../assets/Image/Integration.jpg"
 import HireDe from  "../../assets/Image/HireSoft.jpg"
 import UIUx from "../../assets/Image/UIUx.jpg"
@@ -60,7 +60,7 @@ const DemoCarousel = () => {
   return (
    
     <div className="text-center mt-16 font-poppins">
-    <Fade bottom>
+    <Fade direction="bottom">
     <hr className="mt-8 border-blue-500 border-t-2xl w-80 mx-auto" />
     <h1 className="text-4xl font-semibold font-poppins text-black mt-8">
     <p>------</p>

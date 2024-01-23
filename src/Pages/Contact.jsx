@@ -1,7 +1,7 @@
 
 import HireForm from '../components/HireForm/HireForm'
 import ContactContain from '../components/ContactUS/ContactContain'
-import { Fade } from 'react-reveal'
+import { Fade } from 'react-awesome-reveal'
 import GetInTouch from '../components/OtherFile/GetInTouch'
 import ContactUs from '../assets/Image/ContactUs.jpg'
 import contactmain from '.././assets/Image/Contactmain.jpg'
@@ -32,16 +32,16 @@ const Contact = () => {
   </div>
     <div className=" lg:flex items-center justify-around ">
     <div>
-    <Fade left>
+    <Fade direction='left'>
     <img src={contactmain} alt='' className='w-96 h-96'/>
     <ContactContain/>
     </Fade>
     </div>
-    <Fade right>
+    <Fade direction='right'>
     <HireForm/>
     </Fade>
     </div>
-    <Fade bottom>
+    <Fade direction='bottom'>
     <div className='m-4'>
     <GetInTouch />
     </div>

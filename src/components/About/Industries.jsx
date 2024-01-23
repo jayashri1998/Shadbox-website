@@ -3,23 +3,23 @@ import GetInTouch from '../OtherFile/GetInTouch'
 import HiringProcess from '../HireForm/HireProcess'
 import ApproachImg from '../../assets/Image/Approach.jpg'
 import Indus from '../../assets/Image/Indus.jpg'
-import {Fade} from 'react-reveal';
+import {Fade} from 'react-awesome-reveal';
 
 const  Industries = () => {
   return (
     <div className='mt-16 '>
-    <Fade bottom>
+    <Fade direction="bottom">
    <div className='bg-[#eaf3ff] h-fit    py-8 '>
     <h1 className='font-semibold font-poppins text-4xl mx-2 lg:mx-16' >Welcome to Shadbox Industries: 
         <li className='text-3xl font-medium'>Innovative Digital Mastery</li> 
     <li className='text-3xl font-medium'>Ruby on Rails Brilliance</li> <li className='text-3xl font-medium'> Dynamic, Scalable, Exceptional</li></h1>
     </div>
     </Fade>
-    <Fade bottom>
+    <Fade direction='bottom'>
     <h1 className='text-2xl leading-7 font-roboto lg:text-justify text-gray-600 m-4 lg:mx-16'>
     At Shadbox Industries, we transcend conventional boundaries, pioneering the realm of digital innovation with unparalleled expertise in software development. Established on [Your Foundation Year], we've been on a relentless quest to redefine the possibilities of technology.</h1>
     </Fade>
-    <Fade bottom>
+    <Fade direction='bottom'>
        <div className='relative lg:mx-32 h-fit  flex   ' >  
        <div className='relative   '>
        <img src={ApproachImg} alt='' className='w-screen  lg:w-[65rem] h-80 opacity-20 ' />
@@ -59,7 +59,7 @@ const  Industries = () => {
      <h1 className='font-semibold text-2xl'>Our Passion for Software Brilliance:</h1>
      
      <div className='lg:grid lg:grid-cols-2 gap-8'>
-     <Fade left>
+     <Fade direction="left">
        <div className='font-roboto mt-8'>
          <h1 className='text-[#2563EB] text-lg mt-4'>Elevating Businesses with Ruby on Rails Mastery</h1>
          <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -67,7 +67,7 @@ const  Industries = () => {
          </p>
        </div>
        </Fade>
-       <Fade right>
+       <Fade direction='right'>
        <div className='font-roboto mt-8'>
          <h1 className='text-[#2563EB] text-lg mt-4'>Crafting Full-Stack Wonders</h1>
          <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -82,7 +82,7 @@ const  Industries = () => {
    <div className='lg:mx-12 mt-4 gap-4'>
    <h1 className='font-semibold text-2xl'>Unrivaled Methodology:</h1>
    <div className='lg:grid lg:grid-cols-2 gap-8'>
-   <Fade left>
+   <Fade direction='left'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>Adapting Swiftly</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -90,7 +90,7 @@ const  Industries = () => {
        </p>
      </div>
      </Fade>
-     <Fade right>
+     <Fade direction='right'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>Performance Amplified</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -105,7 +105,7 @@ const  Industries = () => {
  <div className='lg:mx-12 mt-4 gap-4'>
    <h1 className='font-semibold text-2xl'>Scalability and Performance</h1>
    <div className='lg:grid lg:grid-cols-2 gap-8'>
-   <Fade left>
+   <Fade direction='left'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>Seamless Expansion</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -113,7 +113,7 @@ const  Industries = () => {
        </p>
      </div>
      </Fade>
-     <Fade right>
+     <Fade direction='right'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>Optimized Efficiency</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -124,14 +124,14 @@ const  Industries = () => {
    </div>
  </div>
  <div className='lg:flex lg:gap-10 lg:ml-24'>
- <Fade left>
+ <Fade direction='left'>
     <HiringProcess/>
     </Fade>
-    <Fade right>
+    <Fade direction='right'>
     <img src={Indus} alt='' className='w-full lg:w-[600px]  lg:h-[40rem] '/>
     </Fade>
     </div>
-    <Fade bottom>
+    <Fade direction='bottom'>
     <GetInTouch/>
     </Fade>
     </div>

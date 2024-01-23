@@ -2,24 +2,24 @@
 import GetInTouch from '../OtherFile/GetInTouch'
 import AboutShadbox from './AboutShadbox'
 import ApproachImg from '../../assets/Image/Approach.jpg'
-import { Fade } from 'react-reveal'
+import { Fade } from 'react-awesome-reveal'
 
 const Approach = () => {
   return (
     
     <div className='mt-16 '>
-    <Fade bottom>
+    <Fade direction="bottom">
    <div className='bg-[#eaf3ff] h-fit  py-8 '>
     <h1 className='font-semibold font-poppins text-4xl  mx-16' >Solution Facilitation- Our Strategy for 
     <li className='text-3xl font-medium'>Pre-Implementation</li> 
     <li className='text-3xl font-medium'>Implementation</li> <li className='text-3xl font-medium'> Post-Implementation Phases</li></h1>
     </div>
     </Fade>
-    <Fade bottom>
+    <Fade direction='bottom'>
     <h1 className='text-2xl leading-7 font-roboto lg:text-justify text-gray-600 m-4 mx-16'>
        Shadbox consistently focuses on solution enablement throughout the entire process, starting from the planning phase before implementation and extending through post-implementation maintenance and enhancements.</h1>
        </Fade>
-       <Fade bottom>
+       <Fade direction='bottom'>
        <div className='relative lg:mx-32 h-fit  flex  '>  
        <div className='relative  '>
        <img src={ApproachImg} alt='' className='w-screen lg:w-[65rem] h-80 opacity-20 ' />
@@ -58,7 +58,7 @@ const Approach = () => {
      <div className='lg:mx-12 mt-4 gap-4'>
      <h1 className='font-semibold text-2xl'>Solution Enablement: The Role of Sales</h1>
      <div className='lg:grid lg:grid-cols-2 gap-8'>
-     <Fade left>
+     <Fade direction='left'>
        <div className='font-roboto mt-8'>
          <h1 className='text-[#2563EB] text-lg mt-4'>The Traditional Approach</h1>
          <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -66,7 +66,7 @@ const Approach = () => {
          </p>
        </div>
        </Fade>
-       <Fade right>
+       <Fade direction='right'>
        <div className='font-roboto mt-8'>
          <h1 className='text-[#2563EB] text-lg mt-4'>The Shadbox Approach</h1>
          <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -81,7 +81,7 @@ const Approach = () => {
    
    <h1 className='font-semibold text-2xl'>Discover:The Role of Web Development</h1>
    <div className='lg:grid lg:grid-cols-2 gap-8'>
-   <Fade left>
+   <Fade direction='left'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>The Traditional Approach</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -89,7 +89,7 @@ const Approach = () => {
        </p>
      </div>
      </Fade>
-     <Fade right>
+     <Fade direction='right'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>The Shadbox Approach</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -104,7 +104,7 @@ const Approach = () => {
  <div className='lg:mx-12 mt-4 gap-4'>
    <h1 className='font-semibold text-2xl'>Risk Minimization: Dedicated Staff vs Subcontractors</h1>
    <div className='lg:grid lg:grid-cols-2 gap-8'>
-   <Fade left>
+   <Fade direction='left'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>The Traditional Approach</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -113,7 +113,7 @@ const Approach = () => {
        </p>
      </div>
      </Fade>
-     <Fade right>
+     <Fade direction='right'>
      <div className='font-roboto mt-8'>
        <h1 className='text-[#2563EB] text-lg mt-4'>The Shadbox Approach</h1>
        <p className='text-lg leading-7 text-justify text-gray-600 my-4'>
@@ -123,10 +123,10 @@ const Approach = () => {
      </Fade>
    </div>
  </div>
-<Fade bottom>
+<Fade direction=' bottom'>
     <AboutShadbox/>
     </Fade>
-    <Fade bottom>
+    <Fade direction='bottom'>
     <GetInTouch/>
     </Fade>
     </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import LogoSlider from './LogoSlider'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-awesome-reveal';
 
 const Connectuus = () => {
   return (
-    <Fade bottom>
+    <Fade direction="bottom">
     <div className='text-center font-poppins'>
     <hr className='border-blue-500 border-t-2 border-solid w-80 mx-auto'/>
     <h1 className="text-4xl font-semibold font-poppins text-black  mt-8">

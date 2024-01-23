@@ -1,9 +1,9 @@
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const AboutShadbox = () => {
     return (
       <div>
-     <Fade bottom>
+     <Fade direction="bottom">
         <div className="flex flex-col md:flex-row ">
           <div className="max-w-3xl my-10 mx-2 lg:mx-10">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-roboto font-semibold tracking-wide my-4">About <span className="underline decoration-[#2563EB] underline-offset-4">

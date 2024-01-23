@@ -2,7 +2,7 @@
 import GetInTouch from '../OtherFile/GetInTouch';
 import ServiceCard from './ServiceCard';
 import TechStack from '../OtherFile/TechStack';
-import Fade from 'react-reveal';
+import Fade from 'react-awesome-reveal';
 import Connectuus from '../Home/Connectuus';
 import UIDesign from '../../assets/Image/UI.jpg'
 
@@ -30,7 +30,7 @@ const UXDesigner = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-center gap-3 mx-11 mt-14">
-       <Fade left>
+       <Fade direction="left">
       <div>
           <h1 className="text-4xl underline font-roboto font-bold tracking-wide">
           UI/UX Designer
@@ -41,7 +41,7 @@ const UXDesigner = () => {
           </p>
         </div>
         </Fade>
-        <Fade right>
+        <Fade direction="right">
         <div className="mx-3">
           <img
             className=" max-w-sm md:max-w-lg rounded-lg hover:shadow-lg hover:scale-105 transition my-8"
@@ -51,7 +51,7 @@ const UXDesigner = () => {
         </Fade>
       </div>
       <Connectuus/>
-      <Fade bottom>
+      <Fade direction="bottom">
       <div className="flex flex-col md:flex-row gap-4 mt-20 mx-4">
         {serviceData.map((service, index) => (
           <ServiceCard
@@ -63,10 +63,10 @@ const UXDesigner = () => {
         ))}
       </div>
       </Fade>
-      <Fade bottom>
+      <Fade direction="bottom">
       <TechStack/>
       </Fade>
-      <Fade bottom>
+      <Fade direction="bottom">
       <GetInTouch/>
       </Fade>
     </div>

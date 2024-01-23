@@ -4,7 +4,7 @@ import './HeroSection.css'
 import Graphic from '../../assets/Image/graphic.png'
 import AppDevelopment from '../../assets/Image/app-development.png';
 import WebDevelopment from '../../assets/Image/WebDevelopment.png';
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-awesome-reveal';
 const HeroSection = () => {
 
   return (
@@ -22,7 +22,7 @@ const HeroSection = () => {
             }}
           />
         </div>
-        <Fade bottom>
+        <Fade direction="bottom">
         <div className="flex flex-col md:flex-row mt-32 md:mx-16 gap-4 mx-auto" >
         <div className="mt-6 mx-auto py-6 w-[300px] md:w-[300px] text-center md:h-[200px] border border-solid border-blue-400 bg-blue-50 rounded-lg hover:bg-blue-400 transition-transform duration-300 transform hover:scale-110
        hover:shadow-[0_0_1px_#DBEAFE,inset_0_0_1px_#DBEAFE,0_0_2px_#DBEAFE,0_0_10px_#DBEAFE,0_0_15px_#DBEAFE] ">

@@ -3,7 +3,7 @@ import Approach from "../../assets/Image/Approch.jpg";
 import Solution from "../../assets/Image/Solution.jpg";
 import Success from "../../assets/Image/Success.jpg";
 import Industries from "../../assets/Image/Industries.jpg";
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-awesome-reveal';
 
 
 const Card = () => {
@@ -30,7 +30,7 @@ const Card = () => {
       <div >
      
       <div className='flex flex-col md:flex-row justify-center mx-auto'>
-      <Fade left>
+      <Fade direction="left">
         <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2 shadow-lg rounded-lg">
           <div className="content relative w-full md:w-90 mx-auto overflow-hidden ">
           <div
@@ -67,7 +67,7 @@ const Card = () => {
           </div>
         </div>
         </Fade>
-        <Fade right>
+        <Fade direction="left">
         <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2 shadow-lg">
         <div className="content relative w-full md:w-90 mx-auto overflow-hidden">
           <div
@@ -109,7 +109,7 @@ const Card = () => {
       </div>
     
       <div className='flex flex-col md:flex-row justify-center mb-4  '>
-      <Fade left>
+      <Fade direction="left">
       <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2 shadow-lg">
         <div className="content relative w-full md:w-90 mx-auto overflow-hidden">
           <div
@@ -146,7 +146,7 @@ const Card = () => {
         </div>
       </div>
       </Fade>
-      <Fade right>
+      <Fade direction="right">
       <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2 shadow-lg rounded-lg">
       <div className="content relative w-full md:w-90 mx-auto overflow-hidden ">
         <div
