@@ -1,0 +1,1224 @@
+import React from 'react';
+import Solution from "../../assets/Image/Solution.jpg";
+import Approch from "../../assets/Image/Approch.jpg"
+
+
+
+const Card = () => {
+
+  return (
+    <div className='bg-white'>
+    <div className="flex items-center justify-center mt-12 bg-white ">
+      <a className="relative block w-1/4 bg-gray-900 group" href="#">
+        <img className="absolute inset-0 object-cover w-full h-full group-hover:opacity-50" src={Solution} alt="Solution" />
+        <div className="relative p-5">
+          <div className="mt-40">
+            <div className="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+              <div className="p-2">
+                <p className="text-lg text-white">
+                  Give the Solution
+                </p>
+                <button className="px-4 py-2 text-sm text-white bg-blue-600 rounded-lg">
+                  Visit site
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    </div>
+  );
+};
+
+export default Card;
+
+
+
+//////
+<div className="container md:w-1/2 lg:w-1/3 ml-4 mt-4  bg-white shadow-lg ">
+      <div
+        className="content relative w-90 md:w-400 overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="/" target="_blank" className="block group">
+          <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+          <img
+            src={Solution}
+
+
+            alt=""
+            className={`content-image w-full rounded-lg transform scale-100 transition-transform 
+            duration-300 ${hovered ? 'group-hover:scale-110 hover:scale-110' : ''}
+             transition-opacity ${hovered ? 'opacity-50' : 'opacity-100'}`}
+           />
+          <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+            <h3 className="content-title text-white text-left font-bold text-2xl ">Solution</h3>
+            <p className="content-text text-white text-sm">
+         
+            </p>
+            {hovered && (
+              <>
+                {showFullDescription ? (
+              
+                  <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                ) : (
+                  <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                )}
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div className='flex '>
+    <div className="container md:w-1/2 lg:w-1/3 ml-32 mt-4 bg-white shadow-lg">
+      <div
+        className="content relative w-90 md:w-400 overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="/" target="_blank" className="block group">
+          <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+          <img
+            src={Success}
+            alt=""
+            className={`content-image w-full rounded-lg transform scale-100 transition-transform duration-300 ${hovered ? 'group-hover:scale-110 hover:scale-110' : ''} transition-opacity ${hovered ? 'opacity-50' : 'opacity-100'}`}
+         />
+          <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+            <h3 className="content-title text-white text-left font-bold text-2xl ">Success Stories</h3>
+            <p className="content-text text-white text-sm">
+         
+            </p>
+            {hovered && (
+              <>
+                {showFullDescription ? (
+              
+                  <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                ) : (
+                  <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                )}
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div className="container md:w-1/2 lg:w-1/3 ml-4 mt-4  bg-white my-4 shadow-lg">
+      <div
+        className="content relative w-90 md:w-400  overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <a href="/" target="_blank" className="block group">
+          <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+          <img
+            src={Imdustries}
+            alt=""
+            className={`content-image w-full rounded-lg transform  shadow-2xl scale-100 transition-transform duration-300 ${hovered ? 'group-hover:scale-110 hover:scale-110' : ''} transition-opacity ${hovered ? 'opacity-50' : 'opacity-100'}`}
+          />
+          <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+            <h3 className="content-title text-white text-left font-bold text-2xl ">Industries</h3>
+            <p className="content-text text-white text-sm">
+         
+            </p>
+            {hovered && (
+              <>
+                {showFullDescription ? (
+              
+                  <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                ) : (
+                  <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                )}
+              </>
+            )}
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    
+/////////////
+
+      <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2">
+    <div className="content relative w-full md:w-90 mx-auto overflow-hidden shadow-lg">
+            <a href="/" target="_blank" className="block group">
+              <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+              <div className="relative group">
+                <img
+                  src={Solution}
+                  alt=""
+                  className="w-full rounded-lg transition-transform duration-300 transform scale-100 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 w-full h-full bg-black bg-opacity-50"></div>
+              </div>
+
+              <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+                <h3 className="content-title text-white text-left font-bold text-2xl ">Solution</h3>
+                <p className="content-text text-white text-sm">
+
+                </p>
+                {hovered && (
+                  <>
+                    {showFullDescription ? (
+
+                      <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                    ) : (
+                      <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                    )}
+                  </>
+                )}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className='flex flex-col md:flex-row justify-center'>
+      <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2">
+        <div className="content relative w-full md:w-90 mx-auto overflow-hidden shadow-lg">
+            <a href="/" target="_blank" className="block group">
+              <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+              <div className="relative group">
+                <img
+                  src={Success}
+                  alt=""
+                  className="w-full rounded-lg transition-transform duration-300 transform scale-100 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 w-full h-full bg-black bg-opacity-50"></div>
+              </div>
+
+              <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+                <h3 className="content-title text-white text-left font-bold text-2xl ">Success Stories</h3>
+                <p className="content-text text-white text-sm">
+
+                </p>
+                {hovered && (
+                  <>
+                    {showFullDescription ? (
+
+                      <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                    ) : (
+                      <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                    )}
+                  </>
+                )}
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="md:w-1/2 lg:w-1/3 mt-4 mx-2">
+        <div className="content relative w-full md:w-90 mx-auto overflow-hidden shadow-lg">
+            <a href="/" target="_blank" className="block group">
+              <div className={`content-overlay bg-opacity-100 bg-gray-100 absolute h-full w-full top-0 left-0 transition-opacity duration-400 rounded-lg`}></div>
+              <div className="relative group">
+                <img
+                  src={Industries}
+                  alt=""
+                  className="w-full rounded-lg transition-transform duration-300 transform scale-100 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 w-full h-full bg-black bg-opacity-50"></div>
+              </div>
+
+              <div className={`content-details absolute left-2/4 mx-2 mr-2 w-full top-3/4 transition-opacity duration-300 -translate-x-1/2 -translate-y-1/2`}>
+                <h3 className="content-title text-white text-left font-bold text-2xl ">Industries</h3>
+                <p className="content-text text-white text-sm">
+                </p>
+                {hovered && (
+                  <>
+                    {showFullDescription ? (
+
+                      <p className="text-white absolute text-sm w-full mt-8 text-justify top-1">{fullDescription}</p>
+                    ) : (
+                      <a onClick={handleReadMore} className="text-white text-sm">Read More</a>
+                    )}
+                  </>
+                )}
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      nav////
+      import { useState } from 'react';
+import Logo from '../../assets/Image/Img.ico';
+import { IoChevronDown } from "react-icons/io5";
+import { MdMobileFriendly } from "react-icons/md";
+import { IoIosMenu } from "react-icons/io";
+
+const Navbar = () => {
+  let Links = [
+    { name: "HOME", link: "/" },
+    {
+      name: "SERVICE",
+      link: "/service",
+      sublinks: [
+        { name: 'Mobile App Development', link: "/service/mobileapp" },
+        { name: 'Web Development', link: "/service/webdevelopment" },
+        { name: 'Hire Software', link: "/service/hiresoftware" },
+        { name: 'Ruby on Rails Integration && Migration ', link: "/service/integration" },
+        { name: 'UI/UX Design ', link: "/service/uxdesign" }
+      ]
+    },
+    { name: "ABOUT", link: "/about" },
+    { name: "CAREER", link: "/career" },
+    { name: "BLOG", link: "/blog" },
+    { name: "CONTACT", link: "/contact" }
+  ];
+
+  let [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleSubmenuToggle = () => {
+    if (isMobile) {
+      setOpen(true);
+    }
+  };
+
+  return (
+    <div className='shadow-md w-full fixed top-0 left-0 z-10 mt-1'>
+      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+
+        <div className='font-bold text-2xl cursor-pointer flex items-center gap-4'>
+          <span className="icon">
+            <img src={Logo} alt="Logo" className="w-8 h-8 rounded" />
+          </span>
+          <span>Shadbox</span>
+        </div>
+
+        <div
+        onClick={() => setOpen(!open)}
+        className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+      >
+        <IoIosMenu  name={open ? "close" : "menu"}></IoIosMenu>
+      </div>
+
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          open ? "top-20 " : "top-[-490px]"
+        }`}
+      >
+          {Links.map((link, index) => (
+            <li key={index} className='md:ml-8 text-xl md:my-0 my-7 font-semibold relative group'
+              onMouseEnter={() => link.name === 'SERVICE' && setOpen(true)}
+              onMouseLeave={() => link.name === 'SERVICE' && setOpen(false)}
+            >
+              <a href={link.link} className='text-gray-800 hover:text-blue-400  active:text-blue-600  duration-500'>
+                <div className='flex items-center '>
+                  {link.name} {link.name === 'SERVICE' && <IoChevronDown className='w-8 h-4 '  onClick={handleSubmenuToggle} />}
+                </div>
+              </a>
+              {link.sublinks && link.name === 'SERVICE' && (
+                <ul
+                  className={`absolute ${
+                    open ? 'block' : 'hidden'}  bg-gray-50 text-gray-800 border rounded-md p-2 mt-2 space-y-2  w-80 `} >
+                  {link.sublinks.map((sublink, subIndex) => (
+                    <li key={subIndex}>
+                      <a href={sublink.link} className='hover:text-blue-400 duration-500'>
+                        {sublink.name === 'Mobile App Development' && (
+                          <div className='flex items-center'>
+                            <MdMobileFriendly className='mr-2' />
+                            {sublink.name}
+                          </div>
+                        )}
+                        {sublink.name !== 'Mobile App Development' && (
+                          <div>{sublink.name}</div>
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+            </li>
+          ))}
+          <a href='/hiredeveloper'><button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static hover:text-black'>Hire Developer</button></a>
+        </ul>
+
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////
+OPening Cards
+
+
+<div className=" mx-8 max-w-sm mb-6 text-center border-2 rounded-lg px-5 py-8 hover:shadow-2xl transition-shadow duration-300 font-roboto">
+            <h1 className="font-medium text-2xl my-3 hover:text-red-500 transition duration-300">
+              ReactJs Developer 
+            </h1>
+            <h2 className="text-start my-2 text-lg font-medium">Key Responsibilties:</h2>
+            <ul className="list-disc text-start tracking-wide leading-8">
+              <li>Develop and maintain robust and responsive user interfaces using React.</li>
+              <li>Ensure the technical feasibility of UI/UX designs.</li>
+              <li>Optimize applications for maximum speed and scalability.</li>
+  
+            </ul>
+           <div className="text-start my-2">
+           <h2 className="font-medium">Skills:</h2>
+           <h3>HTML,CSS,SASS,JavaScript,JSX,API</h3>
+           </div>
+           <div className="text-start my-2">
+              <h2 className="font-medium">Experience:</h2>
+              <h3>0-2 years <span className="text-gray-500">(required)</span></h3>
+           </div>
+              
+           
+          </div>
+       
+     
+        <div className=" mx-8 max-w-sm mb-6 text-center border-2 rounded-lg px-5 py-8 hover:shadow-2xl transition-shadow duration-300 font-roboto">
+          <h1 className="font-medium text-2xl my-3 hover:text-red-500 transition duration-300">
+            Oracle Developer
+          </h1>
+          <h2 className="text-start my-2 text-lg font-medium">Key Responsibilties:</h2>
+          <ul className="list-disc text-start tracking-wide leading-8">
+            <li>Develop and maintain robust and responsive user interfaces using React.</li>
+            <li>Ensure the technical feasibility of UI/UX designs.</li>
+            <li>Optimize applications for maximum speed and scalability.</li>
+
+          </ul>
+         
+         <div className="text-start my-2">
+         <h2 className="font-medium">Skills:</h2>
+         <h3>HTML,CSS,SASS,JavaScript,JSX,API</h3>
+         </div>
+         <div className="text-start my-2">
+            <h2 className="font-medium">Experience:</h2>
+            <h3>0-2 years <span className="text-gray-500">(required)</span></h3>
+         </div>
+            
+         
+        </div>
+  
+    
+      <div className=" mx-8 max-w-sm mb-6 text-center border-2 rounded-lg px-5 py-8 hover:shadow-2xl transition-shadow duration-300 font-roboto">
+        <h1 className="font-medium text-2xl my-3 hover:text-red-500 transition duration-300">
+        Ruby on Rails
+        </h1>
+        <h2 className="text-start my-2 text-lg font-medium">Key Responsibilties:</h2>
+        <ul className="list-disc text-start tracking-wide leading-8">
+          <li>Develop and maintain robust and responsive user interfaces using React.</li>
+          <li>Ensure the technical feasibility of UI/UX designs.</li>
+          <li>Optimize applications for maximum speed and scalability.</li>
+
+        </ul>
+       
+       <div className="text-start my-2">
+       <h2 className="font-medium">Skills:</h2>
+       <h3>HTML,CSS,SASS,JavaScript,JSX,API</h3>
+       </div>
+       <div className="text-start my-2">
+          <h2 className="font-medium">Experience:</h2>
+          <h3>0-2 years <span className="text-gray-500">(required)</span></h3>
+       </div>
+          
+       
+      </div>
+
+      ///////////////////////////////////////////////////////////////
+      //////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////
+
+
+
+      Navbar.JSX
+      <ul
+              className={`absolute ${
+                serviceDropdownOpen ? 'block' : 'hidden'
+              }  bg-white z-10  text-gray-800 border shadow-lg w-[800px] border-gray-200 rounded-lg p-2 mt-2 items-center justify-center   text-xl`}
+            >
+            <img src={DropDown} alt='' className='w-96 h-56 '/>
+              {/* Submenu items for SERVICE */}
+              <li>
+                <a href="/service/mobileapp" className="hover:text-blue-400 text-lg font-roboto flex gap-2 duration-700 leading-8"> <MdMobileFriendly className='w-8 h-8'/>
+                  Mobile App Development
+                </a>
+                </li>
+               <li>
+                <a href="/service/webdevelopment" className= "hover:text-blue-400  text-lg font-roboto gap-2 flex duration-700 leading-8">
+                <GrPersonalComputer className='w-8 h-8'/> Web Development
+                </a>
+                </li>
+                <li>
+                <a href="/service/hiresoftware" className="hover:text-blue-400 gap-2  text-lg font-roboto flex duration-700 leading-8">
+                <MdDeveloperMode className='w-8 h-8' />   Hire Software Developer
+                </a>
+                </li>
+                <li>
+                <a href="/service/integration" className="hover:text-blue-400  text-lg font-roboto gap-2 flex duration-700 leading-8">
+               <SiRubyonrails className='w-8 h-8' /> Ruby on Rails Project
+                </a>
+                </li>
+     
+            <li>
+              <a href="/service/uxdesign" className="hover:text-blue-400  text-lg font-roboto flex gap-2 duration-700">
+              <SiAltiumdesigner className='w-8 h-8'/> UI/UX Design 
+              </a>
+            </li>
+             
+            </ul>
+            </div>
+
+
+
+
+
+            import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
+
+const LoggingIn = () => {
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    user: {
+      email: '',
+      password: '',
+    },
+  });
+
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      user: {
+        ...prevFormData.user,
+        [name]: value,
+      },
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/v1/sign_in', {
+        method: 'POST',
+        body: JSON.stringify({
+          user: formData.user,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        if (data.success) {
+          // Successful login
+          setSuccess(true);
+          setError('');
+          navigate('/home'); 
+        } else {
+          // Unsuccessful login
+          setError(`Login failed: ${data.error}`);
+          setSuccess(false);
+        }
+      } else {
+        const data = await response.json();
+        setError(`Login failed: ${data.error}`);
+        setSuccess(false);
+      }
+    } catch (error) {
+      setError('An error occurred while processing your request');
+      setSuccess(false);
+    }
+  };
+  
+  return (
+    <div className="max-w-md mx-auto mt-24 mb-20 p-8 bg-white rounded shadow-lg">
+      {success ? (
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Login Successful!</h2>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.user.email}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+            <input
+              type="password"
+              name="password"
+              value={formData.user.password}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+              required
+            />
+          </div>
+          <button type="submit" className="bg-blue-500 text-white rounded p-2 hover:bg-blue-700">
+            Log In
+          </button>
+          {error && <p className="text-red-500 mt-2">{error}</p>}
+        </form>
+      )}
+    </div>
+  );
+};
+
+export default LoggingIn;
+
+
+
+
+
+
+
+// SigningUp.js
+import  { useState } from 'react';
+
+const SigningUp = () => {
+
+    const sign_up_url = import.meta.env.VITE_SIGNUP_URL;
+
+    const [formData, setFormData] = useState({
+      user: {
+        username: '',
+        email: '',
+        password: '',
+        confirmPassword: '',
+      },
+    });
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      user: {
+        ...prevFormData.user,
+        [name]: value,
+      },
+    }));
+  };  
+
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (formData.user.password !== formData.user.confirmPassword) {
+      setError('Passwords do not match');
+    } else {
+      try {
+        // Log the data being sent to the Rails API
+        console.log('Sending data to Rails API:', formData);
+
+        const response = await fetch('/api/v1/sign_up', { 
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+        
+   console.log('Response:', response);
+
+        if (response.ok) {
+          setSuccess(true);
+          setError('');
+        } else {
+          const data = await response.json();
+          setError(`Signup failed: ${data.details.join(', ')}`);
+        }
+      } catch (error) {
+        setError('An error occurred while processing your request');
+      }
+    }
+  };
+ 
+  return (
+    <div className="max-w-md mx-auto mt-24 mb-20 p-8 bg-white rounded shadow-lg">
+      {success ? (
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Signup Successful!</h2>
+          {/* You can redirect the user to another page if needed */}
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">Username:</label>
+            <input
+              type="text"
+              name="username"
+              value={formData.user.username}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.user.email}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+            <input
+              type="password"
+              name="password"
+              value={formData.user.password}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2">Confirm Password:</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              value={formData.user.confirmPassword}
+              onChange={handleChange}
+              className="w-full border rounded p-2"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-500 text-white rounded p-2 hover:bg-blue-700"
+          >
+            Sign Up
+          </button>
+          {error && <p className="text-red-500 mt-2">{error}</p>}
+        </form>
+      )}
+    </div>
+  );
+};
+
+export default SigningUp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import {useState} from 'react';
+import { useForm } from 'react-hook-form';
+import { HiOutlineUser, HiOutlineMail, HiOutlinePhone, HiOutlineChatAlt,HiDocumentText } from 'react-icons/hi';
+import { AiOutlineGithub,AiFillLinkedin } from "react-icons/ai";
+import { MdOutlineAccessTimeFilled } from "react-icons/md";
+
+
+import 'react-phone-input-2/lib/style.css';
+
+const CareerForm = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const [error] = useState('')
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phonenumber: '',
+    experience: '',
+    resume: '',
+    linkedin: '',
+    github: '',
+    coverletter: ''
+  });
+  
+
+
+
+  const onSubmit = (data, event) => {
+    event.preventDefault();
+    console.log(data);
+  };
+
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+  
+
+  const handleChangeNameNew = (e) =>{
+    setName(e.target.value)
+  }
+
+
+const handleSubmit = async (event, onSubmitCallback) => {
+  event.preventDefault();
+  try {
+    const response = await fetch("/api/v1/application_for_jobs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+
+    console.log(result);
+
+    if (result === true) {
+      alert("Please provide complete data.");
+    } else {
+      alert("Submit successfully!");
+      if (onSubmitCallback) {
+        onSubmitCallback(formData);
+      }
+    }
+  } catch (error) {
+    console.error(error);
+  }
+};
+const handleEmailChange = (e) => {
+  const lowercaseEmail = e.target.value.toLowerCase();
+  register('email').onChange(lowercaseEmail);
+  setFormData((prevFormData) => ({
+    ...prevFormData,
+    user: {
+      ...prevFormData.user,
+      email: lowercaseEmail,
+    },
+  }));
+ };
+ 
+//  const handlePhoneNumberChange = (e) => {
+//   const sanitizedValue = e.target.value.replace(/[^\d]/g, '').slice(0, 10);
+//   register('phone').onChange(sanitizedValue);
+//   setFormData((prevFormData) => ({
+//     ...prevFormData,
+//     user: {
+//       ...prevFormData.user,
+//       phonenumber: sanitizedValue,
+//     },
+//   }));
+//  };
+
+  const handleKeyPress = (e) => {
+
+    const isValidInput = /^[0-9\b\t]+$/.test(e.key);
+    if (!isValidInput) {
+      e.preventDefault();
+    }
+  };
+
+  return (
+    <div className="max-w-md mx-auto m-8 p-6 bg-gray-100 rounded-md font-poppins">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4">Apply for this position</h2>
+      <form  onSubmit={handleSubmit}>
+        {/* Name Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2 align-middle" htmlFor="name">
+            <HiOutlineUser className="inline-block mr-2" />Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder='Name'
+            onChange={handleChange}
+            value={formData.name}
+            disabled={false}
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.name ? 'border-red-500' : ''
+            }`}
+            {...register('name', { required: 'Name is required' })}
+          />
+          {errors.name && (
+            <p className="text-red-500 text -xs mt-1">{errors.name.message}</p>
+          )}
+        </div>
+
+        {/* Email Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email" >
+            <HiOutlineMail className="inline-block mr-2" />Email
+          </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder='email'
+            onChange={handleEmailChange}
+            value={formData.email}
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.email ? 'border-red-500' : ''
+            }`}
+            {...register('email', {
+              required: 'Email is required',
+              pattern: {
+                value: /\S+@\S+\.\S+/,
+                message: 'Invalid email address',
+              },
+            })}
+        
+          />
+          {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
+        </div>
+
+         {/* Phone Field */}
+         <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
+            <HiOutlinePhone className="inline-block mr-2" />Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]*"
+            inputMode="numeric"
+            maxLength="12"
+            placeholder="Enter your phone number"
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.phone ? 'border-red-500' : ''
+            }`}
+            {...register('phone', { required: 'Phone is required' })}
+            onChange={handleChange}
+            //value={formData.phonenumber}
+            onKeyPress={handleKeyPress}
+          />
+          {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
+        </div>
+
+        {/* Skills Field */}
+        {/* Add your skills dropdown here */}
+
+        {/* Experience Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="experience">
+          <MdOutlineAccessTimeFilled className="inline-block mr-2" />Experience (in years)
+          </label>
+          <input
+            type="number"
+            id="experience"
+            name="experience"
+            placeholder='experience'
+            onChange={handleChange}
+            value={formData.experience}
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.experience ? 'border-red-500' : ''
+            }`}
+            {...register('experience', { required: 'Experience is required' })}
+          />
+          {errors.experience && <p className="text-red-500 text-xs mt-1">{errors.experience.message}</p>}
+        </div>
+
+        {/* Resume Upload Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="resume">
+          <HiDocumentText className="inline-block mr-1 mb-1" /> Resume (PDF)
+          </label>
+          <input
+            type="file"
+            id="resume"
+            name="resume"
+            accept=".pdf"
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.resume ? 'border-red-500' : ''
+            }`}
+            {...register('resume', { required: 'Resume is required' })}
+          />
+          {errors.resume && <p className="text-red-500 text-xs mt-1">{errors.resume.message}</p>}
+        </div>
+
+        {/* LinkedIn Profile URL Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="linkedin">
+          <AiFillLinkedin className="inline-block mr-2 mb-1" />LinkedIn URL
+          </label>
+          <input
+            type="url"
+            id="linkedin"
+            name="linkedin"
+            placeholder='your Linkdln Url'
+            onChange={handleChange}
+            value={formData.linkedin}
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.linkedin ? 'border-red-500' : ''
+            }`}
+            {...register('linkedin')}
+          />
+          {errors.linkedin && <p className="text-red-500 text-xs mt-1">{errors.linkedin.message}</p>}
+        </div>
+
+        {/* GitHub URL Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="github">
+          <AiOutlineGithub className="inline-block mr-2 mb-1"/>
+GitHub URL
+          </label>
+          <input
+            type="url"
+            id="github"
+            name="github"
+            placeholder='your github URl'
+            onChange={handleChange}
+            value={formData.github}
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.github ? 'border-red-500' : ''
+            }`}
+            {...register('github')}
+          />
+          {errors.github && <p className="text-red-500 text-xs mt-1">{errors.github.message}</p>}
+        </div>
+
+        {/* Cover Letter Field */}
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="coverLetter">
+            <HiOutlineChatAlt className="inline-block mr-2" />Cover Letter
+          </label>
+          <textarea
+            id="coverLetter"
+            name="coverLetter"
+            rows="4"
+            onChange={handleChange}
+            value={formData.coverletter}
+            className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 ${
+              errors.coverLetter ? 'border-red-500' : ''
+            }`}
+            {...register('coverLetter', { required: 'Cover Letter is required' })}
+          ></textarea>
+          {errors.coverLetter && <p className="text-red-500 text-xs mt-1">{errors.coverLetter.message}</p>}
+        </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none hover:bg-blue-600"
+        >
+          Submit
+        </button>
+        {error && <p className="text-red-500 mt-2">{error}</p>}
+      </form>
+    </div>
+  );
+};
+
+export default CareerForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////Comments////////////////////////////////////////
+
+
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+
+const CommentSection = () => {
+   
+  const [error, setError] = useState('');
+  const [commentBody, setCommentBody] = useState('');
+  const [comments, setComments] = useState([]);
+  const { id } = useParams();
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(`/api/v1/comments`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          body: commentBody,
+          blog_id: id,
+          user_id: id,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Server error');
+      }
+
+      const result = await response.json();
+
+      if (result.success === true) {
+        setComments([...comments, result.comment]);
+        setError('');
+        alert('Submit successfully!');
+        setCommentBody('');
+      } else {
+        setError('Please provide complete data.');
+      }
+    } catch (error) {
+      console.error(error);
+      setError('An error occurred while submitting the form.');
+    }
+  };
+
+    
+
+
+  return (
+    <div className="w-full bg-white rounded-lg border p-1 md:p-3 my-10">
+      <h3 className="font-semibold p-1">Discussion</h3>
+      <div className="flex flex-col gap-5 m-3">
+        {/* Comment Container */}
+        {comments.map((comment, index) => (
+          <div key={index} className="comment-container">
+            <div className="flex w-full justify-between border rounded-md">
+              <div className="p-3">
+                <div className="flex gap-3 items-center">
+                  <img
+                    src="https://avatars.githubusercontent.com/u/22263436?v=4"
+                    className="object-cover w-10 h-10 rounded-full border-2 border-emerald-400 shadow-emerald-400"
+                  />
+                  <h3 className="font-bold">
+                    User 1
+                    <br />
+                    <span className="text-sm text-gray-400 font-normal">
+                      Level 1
+                    </span>
+                  </h3>
+                </div>
+                <p className="text-gray-600 mt-2">{comment.text}</p>
+                <button className="text-right text-blue-500">Reply</button>
+              </div>
+              <div className="flex flex-col items-end gap-3 pr-3 py-3">
+                {/* Like and Dislike buttons */}
+              </div>
+            </div>
+  
+            {/* Reply Container */}
+            {comment.replies.map((reply, replyIndex) => (
+              <div key={replyIndex} className="reply-container">
+              <div className="text-gray-300 font-bold pl-14">|</div>
+              <div className="flex justify-between border ml-5  rounded-md">
+                <div className="p-3">
+                  <div className="flex gap-3 items-center">
+                    <img
+                      src="https://avatars.githubusercontent.com/u/22263436?v=4"
+                      className="object-cover w-10 h-10 rounded-full border-2 border-emerald-400  shadow-emerald-400"
+                    />
+                    <h3 className="font-bold">
+                      User 2
+                      <br />
+                      <span className="text-sm text-gray-400 font-normal">
+                        Level 1
+                      </span>
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 mt-2">this is sample commnent</p>
+                </div>
+                <div className="flex flex-col gap-3 pr-3 py-3">
+                  <div>
+                    <svg
+                      className="w-6 h-6 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={5}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      className="w-6 h-6 text-gray-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={5}
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              </div>
+              ))}
+          </div>
+        ))}
+        {/* END Comment Container */}
+  
+        {/* Textarea for new comment */}
+        <div className="w-full px-3 mb-2 mt-6">
+          <textarea
+            className="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-400 focus:outline-none focus:bg-white"
+            name="body"
+            placeholder="Comment"
+            required
+            value={commentBody}
+            //onChange={(e) => setCommentBody(e.target.value)}
+          />
+        </div>
+  
+        {/* Submit button */}
+        <div className="w-full flex justify-end px-3 my-3">
+          <input
+            type="submit"
+            className="px-2.5 py-1.5 rounded-md text-white bg-[#2563EB] text-lg"
+            value="Post Comment"
+            onClick={onSubmit}
+          />
+        </div>
+      </div>
+    </div>
+  );
+  
+            };
+export default CommentSection;
+
+
+
+

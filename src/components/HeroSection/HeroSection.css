@@ -1,0 +1,36 @@
+.back-grad{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);}
+    
+  /* Border Styles for Hover Effect */
+.border-hover {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #21ebff;
+    box-shadow: 0 0 5px #21ebff;
+    height: 50%;
+    width: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect for .custom-btn */
+  .custom-btn:hover .border-hover {
+    height: 100%;
+  }
+  
+  /* Rest of the styles for .custom-btn */
+  .custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
